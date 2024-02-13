@@ -33,7 +33,7 @@ const credito = new CreditoConsumo();
 
 
 
-// Condicional de crédito, debe elegir entre 24 y 84 meses para que le permita realizar el préstamo 
+// Condicional de crédito, debe elegir entre 24 y 84 meses para que le permita realizar el préstamo y tambien de los 18 a 84 años
 
 if ((plazoPrestamo >= 24 && plazoPrestamo <= 84) && (edadPersona >= 18 && edadPersona <= 84)) {
     credito.mostrarCredito();
@@ -91,9 +91,9 @@ function calcularPrestamo(monto, plazo, tasaInteres) {
  // Hago navbar dinamico
 
 const links =[
-    {text: "Credito", url :"../pages/index.html"},
-    {text: "Consulta", url :"../pages/entrada.html"},
-    {text: "Amortización", url :"../pages/amortizacion.html"},
+    {text: "Credito", url :"./index.html"},
+    {text: "Consulta", url :"./entrada.html"},
+    {text: "Amortización", url :"./amortizacion.html"},
 ]
 
 const navBar = document.getElementById ("navBar")
