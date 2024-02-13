@@ -25,7 +25,7 @@ class CreditoConsumo{
         this.seguro = parseFloat(montoPrestamo*seguroPrestamo/100);
     }
    mostrarCredito (){
-    console.log ("hola, "+this.nombre +" solicitaste un credito de: $" +this.montoTotal+" tus cuotas serán de: $"+ parseInt(this.cuotaMensual)+ " a un plazo de "+this.plazo+" meses un tasa fija de "+this.tasaMes+" y un seguro de: "+ this.seguro)
+    console.log ("hola, "+this.nombre +" solicitaste un credito de: $" +this.montoTotal+" tus cuotas serán de: $"+ parseInt(this.cuotaMensual)+ " a un plazo de "+this.plazo+" meses un tasa fija de "+this.tasaMes+"% y un seguro de: $"+ this.seguro)
    }
 }
 
