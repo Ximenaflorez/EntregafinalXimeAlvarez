@@ -1,0 +1,67 @@
+/*esto es para el index html */
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.contenedor-todito {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh; 
+}
+
+.todas-las {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+.card {
+    width: 18rem; 
+    margin: 1rem;
+}
+
+.btn {
+    margin-top: 1rem;
+}
+
+/* esto es para el nav bar */
+
+#navBar {
+    background-color: #343a40; /* Color de fondo del navbar */
+    padding: 10px; /* Espaciado interno */
+    display: flex;
+    justify-content: space-around;
+}
+
+#navBar a {
+    text-decoration: none;
+    color: white; /* Color del texto del enlace */
+    font-weight: bold;
+    padding: 8px 16px; /* Espaciado interno del enlace */
+    border-radius: 5px; /* Bordes redondeados */
+    transition: background-color 0.3s ease; /* Transición de color de fondo al pasar el ratón */
+}
+
+#navBar a:hover {
+    background-color: #555; 
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+    color: #4c5055; 
+    text-align: center; 
+
+    padding-top: 30px;
+}
+
+h3 {
+    color: #6c757d; 
+    text-align: center; 
+    margin-bottom: 10px; 
+}
