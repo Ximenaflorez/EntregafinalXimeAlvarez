@@ -65,3 +65,9 @@ h3 {
     text-align: center; 
     margin-bottom: 10px; 
 }
+
+.cardFrase {
+    text-align: center;
+    font-size: large;
+    padding: 20px;
+}
