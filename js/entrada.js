@@ -30,28 +30,6 @@ document.addEventListener("DOMContentLoaded", function() {
 
 // a partir de acá voy a poner lo de la api 
 
-/*const url = "https://65f76d8db4f842e808859845.mockapi.io/api/v1/intereses"
-
-
-// aqui se cierra lo agregado
-      
-if ((plazoPrestamo >= 24 && plazoPrestamo <= 84) && (edadPersona >= 18 && edadPersona <= 84)) {
-      //local storage 
-      localStorage.setItem("montoPrestamo",montoPrestamo);
-      localStorage.setItem("plazoPrestamo",plazoPrestamo );
-      localStorage.setItem("nombreCompleto",nombreCompleto);
-      localStorage.setItem("edadPersona",edadPersona);
-      window.location.href = "amortizacion.html";
-
-    }
-    
-else if (plazoPrestamo < 24 || plazoPrestamo > 84) {
-    alert("Debes elegir entre 24 y 84 meses");   
-} else if (edadPersona < 18 || edadPersona > 84) {
-    alert("Debes elegir una edad entre 18 y 84 años");
-}
-});
-*/
 const interesesAPI = await obtenerTasasDeInteres();
 console.log (interesesAPI);
         const tasaInteres = obtenerTasaInteres(interesesAPI, edadPersona, plazoPrestamo);
@@ -59,12 +37,14 @@ console.log (interesesAPI);
 
         // Verificar los criterios
         if ((plazoPrestamo >= 24 && plazoPrestamo <= 84) && (edadPersona >= 18 && edadPersona <= 84)) {
+           
             // Almacenar en el almacenamiento local
             localStorage.setItem("montoPrestamo", montoPrestamo);
             localStorage.setItem("plazoPrestamo", plazoPrestamo);
             localStorage.setItem("nombreCompleto", nombreCompleto);
             localStorage.setItem("edadPersona", edadPersona);
             localStorage.setItem("tasaInteres", tasaInteres);
+
             // Redirigir a la página de amortización
             window.location.href = "amortizacion.html";
         } else if (plazoPrestamo < 24 || plazoPrestamo > 84) {
@@ -107,7 +87,6 @@ console.log (interesesAPI);
                 return interes.tasa_interes;
             }
         }
-        // Si no se encuentra ninguna tasa de interés correspondiente, devolver un valor predeterminado o manejar el error según lo necesites
-        return null; // O podrías lanzar un error aquí
+        return null; 
     };
 
