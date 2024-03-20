@@ -3,7 +3,7 @@
  // Hago navbar dinamico
 
 const links =[
-    {text: "Credito", url :"./index.html"},
+    {text: "Crédito", url :"./index.html"},
     {text: "Consulta", url :"./entrada.html"},
     {text: "Amortización", url :"./amortizacion.html"},
 ]
